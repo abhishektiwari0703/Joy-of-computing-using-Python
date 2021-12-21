@@ -1,0 +1,8 @@
+import numpy as np
+p1=list(map(float,input().split()))
+p2=list(map(float,input().split()))
+p3=list(map(float,input().split()))
+n_array = np.array([p1,p2,p3]) 
+ans=abs(np.linalg.det(n_array))
+g = float("{0:.1f}". format(ans))
+print(g,end="")

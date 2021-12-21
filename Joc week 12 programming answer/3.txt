@@ -1,0 +1,6 @@
+import math
+pq=int(input())
+pr=int(input())
+qr=(pq*pq+pr*pr)**(0.5)
+ans=math.asin(pq/qr)
+print (round(math.degrees(ans)),end="")

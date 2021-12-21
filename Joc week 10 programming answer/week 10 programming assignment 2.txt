@@ -1,0 +1,17 @@
+N,n,f,Ans=int(input()),input().split(),0,[]
+ans=[n[i-N:i]for i in range(1,len(n)+1)if i%N==0]
+for k in range(N):
+  p=[]
+  for j in range(N):
+    p.append(ans[j][k])
+  Ans.append(p)
+for a in range(N):
+  if Ans[a].count('1')==2:
+    f=a+1   
+if f!=0:
+  print("yes",f,end="")
+else:
+  print("no",end="")
+    
+       
+    

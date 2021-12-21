@@ -1,0 +1,16 @@
+N,n,f=int(input()),input().split(),0
+ans=[n[i-N:i]for i in range(1,len(n)+1)if i%N==0 and n.count('0')!=N*N]
+for a in range(N):
+  for b in range(N):
+    if len(ans)>1 and ans[a][b]==ans[b][a] :
+      f=f+1
+if f==N*N:
+  print("yes",end="")
+else:
+  print("no",end="")
+    
+    
+    
+    
+       
+    

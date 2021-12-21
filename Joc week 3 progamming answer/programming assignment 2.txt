@@ -1,0 +1,11 @@
+number_list=input().split()
+sorted_list=[]
+for g in number_list:
+  if int(g) not in sorted_list:
+    sorted_list.append(int(g))
+if len(sorted_list)>1:
+  ans=sorted(sorted_list)
+  print(ans[1]+ans[-2],end="")
+else:
+  print(sorted_list[0]*2,end="")
+ 

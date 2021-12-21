@@ -1,0 +1,18 @@
+N,check,mat=int(input()),0,[]
+for  i in range(N):
+    mat.append(input().split())
+for r in range(N):
+    for s in range(N):
+        if mat[r][s]!=mat[s][r]:
+            check=1
+            break
+if check==0:
+    print("Yes",end="")
+else:
+    print("No",end="")
+            
+        
+        
+
+
+    

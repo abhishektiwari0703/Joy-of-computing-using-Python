@@ -1,0 +1,12 @@
+N=input()
+question_list = []
+answer_list = []
+question_list=N.split(" ")
+for num in question_list:
+        if num not in answer_list:
+            answer_list.append(num)
+for i in range(0,len(answer_list)):
+  if i != len(answer_list)-1:
+    print(answer_list[i],end=" ")
+  else:
+    print(answer_list[i],end="")

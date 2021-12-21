@@ -1,0 +1,6 @@
+arr=input().split()
+ans =[]
+for n in  arr:
+  if n[len(n)-1]!='4':
+    ans.append(n)
+print(*ans,end="") 

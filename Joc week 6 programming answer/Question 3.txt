@@ -1,0 +1,23 @@
+(s,a,b,c)=(input(),"","","")
+for i in list(s):
+	a=a+chr((ord(i)-65+3)%26+65)
+for g in list(a)[::-1]:
+    b=b+g 
+for t in list(b):
+      if t=='A':
+        c=c+'U'
+      elif t=='B':
+        c=c+'V'
+      elif t=='C':
+        c=c+'W'
+      elif t=='D':
+        c=c+'X'
+      elif t=='E':
+        c=c+'Y'
+      elif t=='F':
+        c=c+'Z'
+      else:
+        c=c+chr(ord(t)-6)
+print(c,end="")
+  
+    

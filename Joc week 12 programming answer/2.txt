@@ -1,0 +1,8 @@
+n=int(input())
+R=input().split()
+S=input().split()
+score=0
+for r in range(n):
+  if R[r] not in S[r] and S[r] != "." and R[r] !=".":
+    score+=1
+print (score, end="")

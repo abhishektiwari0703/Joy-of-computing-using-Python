@@ -1,0 +1,3 @@
+S,a=list(input()),""
+ans=[y for y in S if y!='A'and y!='E'and y!='O'and y!='U'and y!='I'and y!='a'and y!='e'and y!='i'and y!='o'and y!='u' ]
+print(a.join(ans),end="")

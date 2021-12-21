@@ -1,0 +1,14 @@
+N,check,mat=int(input()),0,[]
+for  p in range(N):
+    m=[]
+    for q in range(N):
+        check=check+1
+        m.append(check)
+    mat.append(m)
+for r in mat[:-1]:
+   print(*r)
+print(*mat[-1],end="")
+        
+
+
+    

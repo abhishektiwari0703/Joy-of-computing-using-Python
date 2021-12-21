@@ -1,0 +1,15 @@
+(s1,s2,x,w)=(input(),input(),[],[])
+R=sorted(list(s1.upper()))
+S=sorted(list(s2.upper()))
+for f in R:
+	if f.isalnum():
+		w.append(f)
+for f in S:
+	if f.isalnum():
+		x.append(f)
+if x==w:
+  print("Yes",end="")
+else:
+  print("No",end="")
+  
+

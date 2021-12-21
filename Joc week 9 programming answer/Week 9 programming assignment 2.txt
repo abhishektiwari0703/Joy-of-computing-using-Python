@@ -1,0 +1,9 @@
+import string as st
+s=list(input().upper())
+if list(st.ascii_uppercase) == sorted(list(set(sorted(s)[sorted(s).index('A'):]))):
+    print("Yes",end="")
+else:
+    print('No',end="")
+
+
+ 
